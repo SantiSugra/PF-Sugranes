@@ -17,15 +17,55 @@
         <ul class="nav">
             <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="./paginas/menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="./paginas/sucursales.html">Sucursales</a></li>
             <li class="nav-item"><a class="nav-link" href="./paginas/contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="./paginas/nosotros.html">Nosotros</a></li>
         </ul>
     </div>
-    <!--slider-->
-    <section>
-        <img src="./multimedia/corona.jpg" alt=".">
-        <img src="./multimedia/heineken.jpg" alt=".">
-        <img src="./multimedia/tirada.jpg" alt=".">
-    </section>
+
+    <!--carousel-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-image-container">
+                                <img src="./multimedia/Pilsen.jpg" class="d-block w-100" alt="Imagen 1">
+                            </div>
+                            <div class="carousel-text">
+                                <h5>Pilsen</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="./multimedia/brahama.jpg" class="d-block w-100" alt="Imagen 2">
+                            </div>
+                            <div class="carousel-text">
+                                <h5>Brahama</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-image-container">
+                                <img src="./multimedia/tirada.jpg" class="d-block w-100" alt="Imagen 3">
+                            </div>
+                            <div class="carousel-text">
+                                <h5>Tirada</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--footer-->
     <footer>
     <div class="conteriner-fluid">
