@@ -1,14 +1,15 @@
+//Variables//
+$color-primario: rgba(255, 255, 255, 0.8);
 /*Cambios gral*/
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 body {
     background-image: url(./multimedia/background.jpg);
     background-size: 100vw 100vh;
     background-attachment: fixed;
-    margin: 0;
 }
 /*Nav*/
 .conteiner-div {
@@ -48,9 +49,21 @@ body {
     color: #fff;
 }
 
+.carousel-maps-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+}
+
 /*footer*/
 footer {
-    padding-top: 200px;
+    padding-top: 166px;
+    margin-right: 15px;
 }
 /*Contacto*/
 form {
@@ -67,7 +80,7 @@ border-radius: 7px;
 form h2 {
     color: white;
     text-align: center;
-    margin: 0;
+    margin: 0px;
     margin-bottom: 20px;
     font-size: 30px
 }
@@ -95,6 +108,49 @@ form textarea {
 
 @media (max-width:480px) {
     form{
+        width: 100%;
+    }
+}
+
+//nosotros//
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-primario;
+    padding: 20px;
+    margin: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-box {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.content-box p {
+    margin: 0;
+    padding-top: 45px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    width: 200px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box,
+    .image-container {
         width: 100%;
     }
 }
