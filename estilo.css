@@ -12,14 +12,46 @@ body {
 }
 
 /*Nav*/
-.conteiner-div {
-  display: grid;
-  justify-content: end;
+header {
   background-color: black;
+  color: #fff;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
 
-.nav-link {
-  color: aliceblue;
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul:hover {
+  color: rgb(231, 214, 214);
+}
+
+nav li {
+  margin-left: 20px;
+  transform: scale(1, 2, 1);
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 /*Slider*/
@@ -159,6 +191,4 @@ form textarea {
   .image-container {
     width: 100%;
   }
-}
-
-/*# sourceMappingURL=estilo.css.map */
+}/*# sourceMappingURL=estilo.css.map */
